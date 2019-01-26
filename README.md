@@ -22,7 +22,7 @@ Consumer Keys|Access Tokens & access token secret
 Consumer API key|lqX6ZguMbSEdOq1fgvjgf4rheNzG3
 Consumer Secret|EFFfTqc6SZCrWEVNYl8WBzc5uvd
 AccessToken|VUAHKVROonYByleMlEmzK5dh5j4
-AccessToken - secretKey|OyvCiRn3zxMRbabuu44NDKvnBu7
+AccessToken Secret Key|OyvCiRn3zxMRbabuu44NDKvnBu7
 
 
 
