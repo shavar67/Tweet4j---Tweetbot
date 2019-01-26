@@ -12,7 +12,7 @@ Initially was building a twitter bot to automatically retweet mentions and hasta
 
 ### How To Use This Application
 * Clone this project and replace the empty fields with your access tokens
-* Add the tweet4j and jfoenix library and organize import
+* Add the tweet4j and jfoenix library and organize imports
 
 ### Authentication 
 * These keys can be found under the keys and tokens section in your app via the twitter developer portal
