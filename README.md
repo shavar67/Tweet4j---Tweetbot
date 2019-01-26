@@ -2,18 +2,19 @@
 Initially was building a twitter bot to automatically retweet mentions and hastags.
 
 
-### Prerequiste
+### Prerequistes
 
 1. tweet4j - Uses your twitter developer account to authenticate 
 1. twitter developer account - create a twitter developer account for access Token
 1. jfoenix material design 
 
 
+
 ### How To Use This Application
 * Clone this project and replace the empty fields with your access tokens
 * Add the tweet4j and jfoenix library and organize import
 
-#### Authentication: 
+### Authentication 
 * These keys can be found under the keys and tokens section in your app via the twitter developer portal
 
 Consumer Keys|Access Tokens & access token secret
