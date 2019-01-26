@@ -1,0 +1,74 @@
+package com.twitterbot2.model;
+import twitter4j.*;
+import twitter4j.conf.Configuration;
+import twitter4j.conf.ConfigurationBuilder;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class TweetBotFactory extends Thread {
+    private String consumerKey = "lqX6ZguMbSEdOq4c6CL5eHgNz";
+    private String consumerKeySecret = "EFFfTqc6SZCrWEVNYl8WBzcA6S6jOZQkT8wTrgeRbDalqANoG3";
+    private String acessToken = "796161699451695104-UXjwmnHCF7VUAHKVROonYByleMlEmzK";
+    private String accessTokenSecret = "OyvCiRn3zxMRbabuu44NDKvnBuo6Zj2SlJYTDQAkLm23C";
+
+    public void retrieveTimeLineContent() throws TwitterException {
+
+        TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
+        Twitter twitterTimeLine = twitterFactory.getInstance();
+        ResponseList<Status> timelineStatus = twitterTimeLine.getHomeTimeline();
+         timelineStatus.stream().forEach(item -> System.out.println("" + item.getId()));
+    }
+  public List<Long> getStatus() throws TwitterException {
+      TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
+      Twitter twitterTimeLine = twitterFactory.getInstance();
+      ResponseList<Status> timelineStatus = twitterTimeLine.getHomeTimeline();
+     return  timelineStatus.stream().map(Status::getId).limit(10).collect(Collectors.toList());
+  }
+    public String postTweet(long id,String tweet ) throws TwitterException {
+        TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
+        twitter4j.Twitter twitterTimeLine = twitterFactory.getInstance();
+       Status status = twitterTimeLine.updateStatus(tweet);
+        Status stat = twitterTimeLine.retweetStatus(id);
+
+
+    System.out.println("Successfully Tweeted: [" + status.getText() + "].");
+      return stat.getRetweetedStatus().getText();
+    }
+
+    public String retweet(long id) throws TwitterException {
+        TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
+        twitter4j.Twitter twitterTimeLine = twitterFactory.getInstance();
+        Status stat = twitterTimeLine.retweetStatus(id);
+        return stat.getUser().getName() + ": " + stat.getText();
+    }
+
+    public List<String> searchTweets(String search,int count) throws TwitterException {
+        TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
+        Twitter twitter = twitterFactory.getInstance();
+        Query query = new Query(search);
+        query.count(count);
+        QueryResult result = twitter.search(query);
+        return result.getTweets().stream().map(item -> item.getText().replaceAll(",", "\n")).collect(Collectors.toList());
+
+    }
+    public Configuration authenticateTwitterAccount() {
+        ConfigurationBuilder configBuilder = new ConfigurationBuilder();
+        configBuilder.setDebugEnabled(true)
+                .setOAuthConsumerKey(consumerKey)
+                .setOAuthConsumerSecret(consumerKeySecret)
+                .setOAuthAccessToken(acessToken)
+                .setOAuthAccessTokenSecret(accessTokenSecret);
+        return configBuilder.build();
+
+    }
+
+    public void PostTweets(String tweet) throws TwitterException {
+        TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
+        twitter4j.Twitter twitterTimeLine = twitterFactory.getInstance();
+        Status status = twitterTimeLine.updateStatus(tweet);
+        System.out.println("Successfully Tweeted: [" + status.getText() + "].");
+
+    }
+
+
+}

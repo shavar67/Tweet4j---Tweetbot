@@ -1,0 +1,87 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+		-fx-background-color:"#202a34";
+		-fx-font-family:'Comic Sans MS';
+		-fx-font-size:15px;
+
+}
+
+
+Label{
+
+-fx-text-fill:"black";
+-fx-font-family:'Comic Sans MS';
+-fx-font-size:15px;
+
+}
+ImageView{
+
+
+}
+.dialog-pane{
+
+}
+.jfx-text-area{
+-fx-text-fill:"black";
+
+}
+.jfx-text-field{
+-fx-text-fill:"black";
+-fx-prompt-text-fill:"black";
+
+}
+
+.jfx-button{
+	-fx-background-radius:5;
+	-fx-background-color:"transparent";
+	-fx-text-fill:"black";
+	 -jfx-button-type:RAISED;
+   -fx-font-family:'Comic Sans MS';
+   -fx-font-size:15px;
+
+}.jfx-list-view{
+ 	-fx-background-radius:5;
+ 	-fx-background-color:"#202a34";
+
+
+
+ }
+
+.gridpane{
+
+}
+
+VBox{
+-fx-background-color:"#202a34";
+
+
+
+}.jfx-slider  .slider-value{
+-fx-background-color:"white";
+}
+.jfx-slider > .animated-thumb{
+-fx-background-color:"red";
+}
+.jfx-slider > .thumb{
+-fx-background-color:"white";
+}
+
+.jfx-slider > .colored-track{
+-fx-background-color:"black";
+}
+.jfx-slider >.track{
+	 -fx-pref-width:70px;
+	 -fx-pref-height:2px;
+	-fx-background-color:"red";
+}
+Text{
+-fx-text-fill:"black";
+-fx-font-size:12pt;
+}
+HBox{
+	-fx-background-color:"#202a34";
+
+}
+.BorderPane{
+	-fx-background-color:"#202a34";
+}
