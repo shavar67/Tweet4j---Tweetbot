@@ -71,5 +71,5 @@ public List<Long> getStatus() throws TwitterException {
 ```
 
 
-<img src="https://github.com/shavar67/JavaFx-Tweet4J-Gui/blob/master/searchByHashTag.jpg"  title="Tweetbot Gui">
+<img src="https://https://github.com/shavar67/TwitterBot2.0/blob/master/searchByHashTag.jpg"  title="Tweetbot Gui">
 
