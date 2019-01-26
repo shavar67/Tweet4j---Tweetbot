@@ -5,7 +5,7 @@ Initially was building a twitter bot to automatically retweet mentions and hasta
 ### Prerequistes
 
 1. tweet4j - Uses your twitter developer account to authenticate [tweet4j](http://twitter4j.org/en/)
-1. twitter developer account - create a twitter developer account for access Token
+1. twitter developer account - create a twitter developer account for access Token [Twitter Developer Portal](https://developer.twitter.com/en.html)
 1. jfoenix material design library  [Jfoenix](http://www.jfoenix.com/index.html#start)
 
 
