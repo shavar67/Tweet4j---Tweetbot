@@ -10,17 +10,20 @@ Initially was building a twitter bot to automatically retweet mentions and hasta
 
 
 ### How To Use This Application
-
-#### Authentication: This is where your twitter developer account comes into play
 * Clone this project and replace the empty fields with your access tokens
 * Add the tweet4j and jfoenix library and organize import
-* 
 
-#### You will need: 
-1. **your consumer-key**
-1. **consumer-secret-key**
-1. **access-token**
-1. **acess-token-secret-key**
+#### Authentication: 
+* These keys can be found under the keys and tokens section in your app via the twitter developer portal
+
+Consumer Keys|Access Tokens & access token secret
+-------|-----------------------------------------
+Consumer API key|lqX6ZguMbSEdOq1fgvjgf4rheNzG3
+Consumer Secret|EFFfTqc6SZCrWEVNYl8WBzc5uvd
+AccessToken|VUAHKVROonYByleMlEmzK5dh5j4
+AccessToken - secretKey|OyvCiRn3zxMRbabuu44NDKvnBu7
+
+
 
 
 #### Declare and assign your variables
