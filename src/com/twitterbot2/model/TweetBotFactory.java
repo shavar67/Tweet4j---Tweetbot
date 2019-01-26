@@ -6,10 +6,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TweetBotFactory extends Thread {
-    private String consumerKey = "lqX6ZguMbSEdOq4c6CL5eHgNz";
-    private String consumerKeySecret = "EFFfTqc6SZCrWEVNYl8WBzcA6S6jOZQkT8wTrgeRbDalqANoG3";
-    private String acessToken = "796161699451695104-UXjwmnHCF7VUAHKVROonYByleMlEmzK";
-    private String accessTokenSecret = "OyvCiRn3zxMRbabuu44NDKvnBuo6Zj2SlJYTDQAkLm23C";
+    private String consumerKey = "";
+    private String consumerKeySecret = "";
+    private String acessToken = "";
+    private String accessTokenSecret = "";
 
     public void retrieveTimeLineContent() throws TwitterException {
 
