@@ -28,7 +28,7 @@ AccessToken Secret Key|OyvCiRn3zxMRbabuu44NDKvnBu7
 
 
 #### Declare and assign your variables
-```
+```java
  private String consumerKey = "DO NOT EXPOSE";
  private String consumerKeySecret = "DO NOT EXPOSE";
  private String acessToken = "DO NOT EXPOSE";
@@ -36,7 +36,7 @@ AccessToken Secret Key|OyvCiRn3zxMRbabuu44NDKvnBu7
 
 ```
 #### This method will authenticate your account whenever you need to
-```
+```java
 public Configuration authenticateTwitterAccount() {
         ConfigurationBuilder configBuilder = new ConfigurationBuilder();
         configBuilder.setDebugEnabled(true)
@@ -58,7 +58,7 @@ public Configuration authenticateTwitterAccount() {
 #### How to retrieve statuses on your timeline. 
 * The following method uses higher order functions to map the statuses to a list for later uses.
 
-```
+```java
 public List<Long> getStatus() throws TwitterException {
       TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
       Twitter twitterTimeLine = twitterFactory.getInstance();
@@ -68,7 +68,7 @@ public List<Long> getStatus() throws TwitterException {
 ```
 #### Retweet Method
 
-```
+```java
  public String retweet(long id) throws TwitterException {
         TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
         twitter4j.Twitter twitterTimeLine = twitterFactory.getInstance();
