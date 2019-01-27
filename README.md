@@ -1,5 +1,5 @@
 
-Initially was building a twitter bot to automatically retweet mentions and hastags.
+Initially i was building a twitter bot to automatically retweet mentions and hastags.
 
 
 ### Prerequistes
