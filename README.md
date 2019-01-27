@@ -1,4 +1,4 @@
-# JavaFx-TweetBot-GUI
+
 Initially was building a twitter bot to automatically retweet mentions and hastags.
 
 
