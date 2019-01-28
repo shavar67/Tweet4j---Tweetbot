@@ -1,6 +1,6 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/shavar67/Tweet4j---Tweetbot?branch=master)](https://bettercodehub.com/)
 [![CodeFactor](https://www.codefactor.io/repository/github/shavar67/tweet4j---tweetbot/badge)](https://www.codefactor.io/repository/github/shavar67/tweet4j---tweetbot)
-
+[![](https://img.shields.io/twitter/follow/espadrine.svg?label=Follow&style=social?style=social)](twitter.com/__shavar)
 
 ### Prerequistes
 
