@@ -1,7 +1,4 @@
 
-Initially i was building a twitter bot to automatically retweet mentions and hastags.
-
-
 ### Prerequistes
 
 1. tweet4j - Uses your twitter developer account to authenticate [tweet4j](http://twitter4j.org/en/)
