@@ -14,13 +14,7 @@ Label{
 -fx-font-size:15px;
 
 }
-ImageView{
 
-
-}
-.dialog-pane{
-
-}
 .jfx-text-area{
 -fx-text-fill:"#b2b2b2";
 
@@ -52,9 +46,6 @@ ImageView{
 
  }
 
-.gridpane{
-
-}
 
 VBox{
 -fx-background-color:"#2a2e37";
