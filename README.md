@@ -1,4 +1,7 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/shavar67/Tweet4j---Tweetbot?branch=master)](https://bettercodehub.com/)
+[![CodeFactor](https://www.codefactor.io/repository/github/shavar67/tweet4j---tweetbot/badge)](https://www.codefactor.io/repository/github/shavar67/tweet4j---tweetbot)
+
+
 ### Prerequistes
 
 1. tweet4j - Uses your twitter developer account to authenticate [tweet4j](http://twitter4j.org/en/)
