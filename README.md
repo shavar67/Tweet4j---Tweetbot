@@ -1,8 +1,6 @@
-[![BCH compliance](https://bettercodehub.com/edge/badge/shavar67/Tweet4j---Tweetbot?branch=master)](https://bettercodehub.com/)
-[![CodeFactor](https://www.codefactor.io/repository/github/shavar67/tweet4j---tweetbot/badge)](https://www.codefactor.io/repository/github/shavar67/tweet4j---tweetbot)
-![](https://img.shields.io/github/contributors/shavar67/Tweet4j---Tweetbot.svg)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
-![](https://img.shields.io/github/issues/shavar67/Tweet4j---Tweetbot.svg)
+ |Better Code |Code Factor |Miscellaneous| 
+-------|--------|-----------|
+[![BCH compliance](https://bettercodehub.com/edge/badge/shavar67/Tweet4j---Tweetbot?branch=master)](https://bettercodehub.com/)|[![CodeFactor](https://www.codefactor.io/repository/github/shavar67/tweet4j---tweetbot/badge)](https://www.codefactor.io/repository/github/shavar67/tweet4j---tweetbot)|![](https://img.shields.io/github/contributors/shavar67/Tweet4j---Tweetbot.svg) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama) ![](https://img.shields.io/github/issues/shavar67/Tweet4j---Tweetbot.svg)
 ### Prerequistes
 
 1. tweet4j - Uses your twitter developer account to authenticate [tweet4j](http://twitter4j.org/en/)
