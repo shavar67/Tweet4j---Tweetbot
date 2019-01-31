@@ -25,14 +25,19 @@ public class TweetBotFactory extends Thread {
       Twitter twitterTimeLine = twitterFactory.getInstance();
       ResponseList<Status> timelineStatus = twitterTimeLine.getHomeTimeline();
      return  timelineStatus.stream().map(Status::getId).limit(800).collect(Collectors.toList());
-  }
-    public String postTweet(long id,String tweet ) throws TwitterException {
+  } 
+    
+    
+   /** 
+   ignore
+   public String postTweet(long id,String tweet ) throws TwitterException {
         TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
         twitter4j.Twitter twitterTimeLine = twitterFactory.getInstance();
        Status status = twitterTimeLine.updateStatus(tweet);
 
       return "Successfully Tweeted [" + status.getText() + "].";
     }
+    **/
 
     public String retweet(long id) throws TwitterException {
         TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
