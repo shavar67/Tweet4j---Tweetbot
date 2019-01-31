@@ -2,6 +2,8 @@ package com.twitterbot2.model;
 import twitter4j.*;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,17 +24,14 @@ public class TweetBotFactory extends Thread {
       TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
       Twitter twitterTimeLine = twitterFactory.getInstance();
       ResponseList<Status> timelineStatus = twitterTimeLine.getHomeTimeline();
-     return  timelineStatus.stream().map(Status::getId).limit(10).collect(Collectors.toList());
+     return  timelineStatus.stream().map(Status::getId).limit(800).collect(Collectors.toList());
   }
     public String postTweet(long id,String tweet ) throws TwitterException {
         TwitterFactory twitterFactory = new TwitterFactory(authenticateTwitterAccount());
         twitter4j.Twitter twitterTimeLine = twitterFactory.getInstance();
        Status status = twitterTimeLine.updateStatus(tweet);
-        Status stat = twitterTimeLine.retweetStatus(id);
 
-
-    System.out.println("Successfully Tweeted: [" + status.getText() + "].");
-      return stat.getRetweetedStatus().getText();
+      return "Successfully Tweeted [" + status.getText() + "].";
     }
 
     public String retweet(long id) throws TwitterException {
@@ -48,7 +47,7 @@ public class TweetBotFactory extends Thread {
         Query query = new Query(search);
         query.count(count);
         QueryResult result = twitter.search(query);
-        return result.getTweets().stream().map(item -> item.getText().replaceAll(",", "\n")).collect(Collectors.toList());
+        return result.getTweets().stream().map(item -> item.getUser().getName() +  ": " + item.getText().replaceAll(",", "\n")).collect(Collectors.toCollection(ArrayList::new));
 
     }
     public Configuration authenticateTwitterAccount() {

@@ -115,7 +115,7 @@ TweetBotFactory bot = new TweetBotFactory();
       display.setText("" + bot.searchTweets(searchQuery.getText(),20));
     }
 
-    public void clearList() throws TwitterException {
+    public void clearList() {
         statusList.getItems().clear();
         display.setText("");
         searchQuery.setText("");
@@ -126,9 +126,7 @@ TweetBotFactory bot = new TweetBotFactory();
      hbox.setAlignment(Pos.CENTER);
      feed.setSpacing(20);
      submit = new JFXButton("Submit");
-     submit.setOnAction(tweet->{
 
-     });
      feed.setAlignment(Pos.TOP_CENTER);
      feed.setPadding(new Insets(15));
      postTweet = new JFXTextField();
@@ -172,7 +170,7 @@ TweetBotFactory bot = new TweetBotFactory();
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
        stage = new Stage();
        scene = new Scene(setupContent());
         scene.getStylesheets().add(this.getClass().getResource("Application.css").toExternalForm());
