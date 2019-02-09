@@ -79,3 +79,4 @@ public List<Long> getStatus() throws TwitterException {
 
 <img src="https://github.com/shavar67/TwitterBot2.0/blob/master/searchByHashTag.jpg"  title="Tweetbot Gui">
 
+<img src="https://github.com/shavar67/Tweet4j---Tweetbot/blob/master/prototype.JPG" title="New Ui">
