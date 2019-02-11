@@ -26,12 +26,12 @@ AccessToken Secret Key|OyvCiRn3zxMRbabuu44NDKvnBu7
 
 
 
-#### Declare and assign your variables
+#### Declare and assign your variables, watch out for whitespace it could lead to authorization failed to recogonized api keys.
 ```java
- private String consumerKey = "DO NOT EXPOSE";
- private String consumerKeySecret = "DO NOT EXPOSE";
- private String acessToken = "DO NOT EXPOSE";
- private String accessTokenSecret = "DO NOT EXPOSE";
+ private String consumerKey = "lqX6ZguMbSEdOq1fgvjgf4rheNzG3";
+ private String consumerKeySecret = "EFFfTqc6SZCrWEVNYl8WBzc5uvd";
+ private String acessToken = "VUAHKVROonYByleMlEmzK5dh5j4";
+ private String accessTokenSecret = "OyvCiRn3zxMRbabuu44NDKvnBu7";
 
 ```
 #### This method will authenticate your account whenever you need to
