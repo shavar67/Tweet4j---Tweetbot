@@ -8,11 +8,6 @@
 1. jfoenix material design library  [Jfoenix](http://www.jfoenix.com/index.html#start)
 
 
-
-### How To Use This Application
-* Clone this project and replace the empty fields with your access tokens
-* Add the tweet4j and jfoenix library and organize imports
-
 ### Authentication 
 * These keys can be found under the keys and tokens section in your app via the twitter developer portal
 
